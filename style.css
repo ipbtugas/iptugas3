@@ -1,0 +1,352 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* tambahkan box-sizing untuk menghindari masalah padding dan border yang mempengaruhi lebar elemen */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {
+    max-width: 1100px; /* Mengganti width dengan max-width agar bisa menyesuaikan dengan layar yang lebih kecil */
+    margin: auto;
+    position: relative;
+    text-align: justify;
+    padding: 0 20px; /* Menambahkan padding agar konten tidak terlalu dekat dengan tepi layar */
+}
+
+.wrapper img {
+    margin: 13px;
+    max-width: 100%; /* Membuat gambar responsif agar tidak melebihi lebar kontainer */
+}
+
+.kolom {
+    width: 100%; /* Mengubah width agar konten mengambil lebar penuh pada layar kecil */
+    margin: auto;
+    position: relative;
+    /* text-align: justify; */
+}
+
+.left {
+    width: 100%; /* Mengubah width agar konten mengambil lebar penuh pada layar kecil */
+    margin: auto;
+    position: relative;
+    text-align: justify;
+}
+
+.tim {
+    width: 100%; /* Mengubah width agar konten mengambil lebar penuh pada layar kecil */
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.logo a {
+    font-size: 2rem; /* Menggunakan ukuran font responsif */
+    font-weight: 800;
+    float: none; /* float dihapus agar logo menyesuaikan lebar layar */
+    font-family: courier;
+    color: #B99470;
+    display: block; /* Menjadikan tautan sebagai elemen blok agar bisa diatur lebar dan posisinya */
+    text-align: center;
+    padding: 10px 0; /* Menambahkan padding agar tautan lebih mudah diakses pada layar kecil */
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; /* Menggunakan flex-wrap agar menu bisa berada di bawah logo pada layar kecil */
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #FAEED1;
+    z-index: 1;
+    border-bottom: 1px solid #BBAB8C;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-grow: 1; /* Menambahkan flex-grow agar menu bisa merapat ke kanan pada layar kecil */
+}
+
+nav ul li {
+    flex-grow: 1; /* Menambahkan flex-grow agar menu bisa merapat ke kanan pada layar kecil */
+}
+
+nav ul li a {
+    color: #B99470;
+    font-weight: bold;
+    text-align: justify;
+    padding: 0px 16px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans-ms';
+    color: #B99470;
+}
+
+h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #B99470;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-ungu {
+    background: #b03194;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-ungu :hover {
+    background: #7071e8;
+    text-decoration: none;
+}
+
+a.tbl-ungu {
+    background: #BBAB8C;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink {
+    background: #e870bc;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru {
+    background: hsl(190, 88%, 65%);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+a.tbl-kuning {
+    background: #f4e972;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink :hover {
+    background: #7071E8;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.kiri {
+    text-align: justify;
+    width: 100%;
+}
+
+.variant {
+    widows: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-variant {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-variant img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-variant {
+    font-family: 'Open Sans',sans-serif;
+    /* font-weight: 800; */
+    font-size: 16px;
+    text-align: left;
+    color: black;
+}
+
+.variant {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tim {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kontakPerson {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-partners {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-partners img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#contact {
+    background: #dedede;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-Bottom {
+    text-align: center;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #B99470;
+    width: 100%;
+    line-height: 50px;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 767.98px) {
+    .wrapper {
+        margin: 13px auto; /* Mengatur margin agar gambar menjadi tengah pada layar kecil */
+    }
+
+    .kolom, .left, .tim {
+        margin-top: 20px; /* Mengurangi margin atas pada layar kecil */
+        margin-bottom: 20px; /* Mengurangi margin bawah pada layar kecil */
+    }
+
+    
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav.menu ul li {
+        display: block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-variant {
+        width: 50%;
+    }
+
+    .kartu-partners {
+        width: 50%;
+    }
+}
